@@ -11,6 +11,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 4px 15px 4px 10px;
+   
 }
 .dflex{
     display:flex;
@@ -19,17 +20,21 @@ nav {
 }
 .left{
     border:1px solid #131921;
+  
 }
+
 
 .amazon-logo{
     background: url('/imgs/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_2.png') no-repeat -10px -90px;
 	width: 76px;
-	height: 23px;  
+	height: 23px; 
+  
 }
 .map{
-    background: url('/imgs/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_2.png') no-repeat -71px -379px;
+    background: url('/imgs/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_2.png') no-repeat -71px -378px;
 	width: 16px;
 	height: 17px;
+    
 }
 
 .shopping-cart{
@@ -37,29 +42,27 @@ nav {
 	width: 38px;
 	height: 26px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /*align-items: center;*/
+   /* justify-content: center;*/
 }
-.shopping-cart span{
-   /* margin-top: 25px;
-    margin-left: 60px;*/
+.shopping-cart p{
+   margin-top: 25px;
+    margin-left: 35px;
     display:flex;
-    align-items: center;
-    justify-content: center;
+    /*align-items: center;*/
     color:#fff;
     font-size: small;  
     align-self: flex-end;
 
 }
-.badge{
+.shopping-cart .badge{
     color:rgb(247, 155, 80);
     font-weight: bold;
    position: relative;
    left: -0.7rem;
    bottom: 0.5rem;
-    font-size: 1.2rem;
-    
-    
+    font-size: 1.2rem; 
+    margin-left: -35px;
 }
 
 .flag{
@@ -70,27 +73,23 @@ nav {
     
 }
 .right  .fa-caret-down{
-    margin-left: 25px;
-    
+    margin-left: 25px;  
 }
 
-    
 .item{
     padding: 10px 10px;
-   
 }
 .item:hover{
     border: 1px solid #fff;
     border-radius: 2px;
     margin: -1px;
 }
-/*.logo{
-    text-align: center;
-    margin: 1px;
-    margin-bottom: -5px;
-    padding: 6px 8px 0 0;
-    height: 42px;
-}*/
+.amazon-logo:hover{
+    border: 1px solid #fff;
+    border-radius: 2px;
+    padding: 0px;
+    margin: auto;
+}
 a{
     display: flex;
     text-align: center;
@@ -140,8 +139,8 @@ P{
    background: rgb(187, 187, 187);
  }
  nav .search{
-   padding: 10px;
-     margin: -3px;
+   padding: 10.5px;
+   margin: -3px;
      background: #febd69;
      border-radius: 0 5px 5px 0;
     
@@ -221,39 +220,54 @@ nav .submenu i{
 border: 1px solid rgb(240, 141, 60);
 box-shadow:0 0 5px 0 rgb(247, 155, 80) ;  
 }
-.div3{
-    display: grid;
-    width:100px;
-    visibility:hidden;
+.div2{
+    width: 90px;
 }
-
-.div3 img{
-   zoom:60%;
-   /* margin-top: 50px;*/
-    border: none;
-    margin-left: 300px;
-    margin-top: -600px;
+.img{
+    width: 40px;
+    height: 500px;
+    margin-left: 15px;
 }
-.div3 img:hover{
-    border: none;
-    box-shadow: none;
+#picture {
+    width: 10px;
+    height: 30px; 
+    background-color:#ffffff;
 }
-.div2:hover .larg2{
-
-  visibility:visible;
+#picture a.small, #picture a.small:visited { 
+    display:block; 
+    width:30px; 
+    height:50px; 
+    text-decoration:none;
+    background:#ffffff; 
+    top:0; 
+    left:0;
+    border:0;
+    }
+#picture a img {border:0;}
+#picture a.small:hover {
+    text-decoration:none;
+    /* background-color:#000000; */
+    /* color:#000000;*/
+    }
+#picture a .large {
+    display:block;
+    position:absolute;
+    width:0;
+    height:0; 
+    border:0;
+    top:0;
+    left:0;
+   
 }
- .larg2{
-    visibility:hidden;
-    zoom:30%;
-    margin-left: 300px;
-    margin-top: -1500px;
-} 
-
-
-
-
-
-
+#picture a.small:hover .large {
+    display:block; 
+    position:absolute;
+    top: 200px; 
+    left:100px;
+    width:450px;
+    height:500px; 
+    
+}
 
 .div4 {
     display: grid;
@@ -303,7 +317,6 @@ box-shadow:0 0 5px 0 rgb(247, 155, 80) ;
     margin-left: 170px;
     margin-top: 20px;
     zoom: 50%;
-   
    padding-left: 45px;
 
 }
@@ -323,7 +336,7 @@ cursor: pointer;
     text-decoration: underline;
     color: rgb(199, 81, 31);
 }
-.line{
+.line  {
     border-bottom:1px  #e7e7e7;
 }
 table .price{
@@ -331,7 +344,7 @@ table .price{
     position: absolute;
     top:400px;
     margin-left: 0px;
-   margin-top: 20px;
+   margin-top: 30px;
    font-size: 14px;
 }
 table .span12{
@@ -372,6 +385,7 @@ table .span12{
     border-radius: 5px;
     padding: 15px;
     height: 105vh;
+    
    
 }
 .first-row{
@@ -455,6 +469,21 @@ table .span12{
     margin-left: 5px;
     
 }
+#Qty{
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 3px 5px ;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #0f1111;
+    background: #e3e3e6;
+    width: 60px;
+  }
+  .qty{
+      position: relative;
+  }
 .qty button{
     padding: 2px 20px 2px 0;
     padding-left: 5px;
@@ -463,6 +492,7 @@ table .span12{
     border:1px solid #ddd;
     border-radius: 5px ;
     cursor: pointer; 
+    
     
 }
 .qty button:hover{
@@ -550,7 +580,7 @@ table .span12{
     color: #000;
     font-size: 14px;
 }
-h1{
+ h1{
     border-top:1px solid #ddd;
     margin-bottom: 10px;
 }
@@ -740,14 +770,15 @@ h1{
 	width: 16px;
 	height: 26px;
     zoom: 50%;  
-     
+   
 }
 .continer1 a{
     border: 1px solid #ddd;
     padding: 10px;
     border-radius: 5px;
-   /* margin-top: 140px;*/
+    
     cursor: pointer;
+    margin: auto;margin-top:140px;
 }
 .continer1 a:hover{
     background-color: #f7fafa;
