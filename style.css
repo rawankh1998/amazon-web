@@ -131,7 +131,8 @@ P{
  nav .all{
      background: #ddd;
      border-radius: 5px 0 0 5px;
-     padding: 10px;
+     padding: auto;
+     
     
      
  }
